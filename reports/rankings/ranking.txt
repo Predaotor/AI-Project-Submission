@@ -1,0 +1,10 @@
+How Rankings Were Determined:
+
+I calculated monthly sentiment scores for each employee based on their communication data (Task 3).
+For each month, the top-performing employees were selected by:
+
+Sorting by sentiment score (descending)
+
+Using alphabetical order of employee emails to break ties
+We then classified employees into "Top Positive" and "Top Negative" rankings.
+The results were saved as a structured dataset for further analysis and visualization.
