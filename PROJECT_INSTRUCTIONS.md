@@ -3,6 +3,24 @@
 This project involves analyzing an unlabeled dataset of employee messages to assess sentiment and engagement. Your task is to work from raw data and derive insights using natural language processing (NLP) and statistical analysis techniques. The project is divided into several distinct tasks, each focusing on a different aspect of data analysis and
 
 model development. Your final deliverables should include a well-documented codebase, a comprehensive report, visualizations, and a clear summary of findings.
+Structure -- employee-sentiment-analysis/
+│
+├── data/
+│   └── test.csv                 # Input dataset
+│
+├── notebooks/
+│   └── employee_sentiment.ipynb # One main notebook (sentiment, EDA, scoring, risk, modeling)
+│
+├── visualizations/
+│   └── charts/                  # Store all plots (EDA, ranking, model results)
+│
+├── reports/
+│   └── final_report.docx        # Final project report
+│
+├── PROJECT_INSTRUCTIONS.md      # Full problem statement (this file)
+├── README.md                    # Summary and repo instructions
+├── requirements.txt             # Dependencies
+└── .gitignore                   # Ignore checkpoints, __pycache__, etc.
 
 
 2. Project Objective
