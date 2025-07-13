@@ -1,0 +1,41 @@
+# Python ignores
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+.env/
+
+# Data files (DO NOT version raw data!)
+data/raw/
+data/processed/
+
+# Model weights, checkpoints
+*.h5
+*.ckpt
+*.pth
+*.pt
+*.joblib
+*.pkl
+
+# Logs and outputs
+*.log
+logs/
+outputs/
+experiments/
+
+# System files
+.DS_Store
+
+# IDE specific
+.vscode/
+.idea/
+
+# Cache and temporary files
+*.cache
+*.tmp
+*.csv
