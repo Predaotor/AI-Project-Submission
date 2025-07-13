@@ -11,7 +11,7 @@ venv/
 .env/
 
 # Data files (DO NOT version raw data!)
-data/raw/
+data/
 data/processed/
 
 # Model weights, checkpoints
@@ -38,4 +38,4 @@ experiments/
 # Cache and temporary files
 *.cache
 *.tmp
-*.csv
+

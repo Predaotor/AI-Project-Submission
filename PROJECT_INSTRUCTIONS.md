@@ -3,7 +3,7 @@
 This project involves analyzing an unlabeled dataset of employee messages to assess sentiment and engagement. Your task is to work from raw data and derive insights using natural language processing (NLP) and statistical analysis techniques. The project is divided into several distinct tasks, each focusing on a different aspect of data analysis and
 
 model development. Your final deliverables should include a well-documented codebase, a comprehensive report, visualizations, and a clear summary of findings.
-Structure -- employee-sentiment-analysis/
+Structure -- AI-project-submission/
 │
 ├── data/
 │   └── test.csv                 # Input dataset
