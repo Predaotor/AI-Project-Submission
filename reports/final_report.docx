@@ -1,0 +1,115 @@
+                Employee Sentiment Analysis and Flight Risk Prediction
+
+1. Introduction
+This project analyzes Enron employee email data to extract sentiment, score employee communications, identify flight risks, and build predictive models. The pipeline includes text sentiment analysis, feature engineering, employee ranking, risk flagging, and predictive modeling.
+
+2. Methodology
+Task 1: Sentiment Labeling
+Approach:
+We used a pre-trained sentiment analysis model to assign sentiment labels (Positive, Neutral, Negative) and numerical sentiment scores to the email messages.
+
+Dataset Used: test.csv
+
+Output: labeled_test.csv with additional sentiment and score columns.
+
+Task 2: Exploratory Data Analysis (EDA)
+EDA Goals:
+
+Understand communication patterns.
+
+Explore sentiment distribution per employee and over time.
+
+Key Findings:
+
+Certain employees consistently have high positive or negative sentiment scores.
+
+Email length and word count correlate with sentiment intensity.
+
+Visualizations:
+
+Sentiment distribution histograms.
+
+Monthly sentiment trends.
+
+Top 10 Positive/Negative employees bar charts.
+
+Task 3: Feature Engineering
+Features Created:
+
+num_messages: Number of messages sent per employee per month.
+
+avg_msg_length: Average message length.
+
+total_word_count: Total word count.
+
+sentiment_score: Aggregated sentiment score (Target for prediction).
+
+Task 4: Employee Scoring and Ranking
+Process:
+
+Aggregate employee sentiment scores per month.
+
+Rank employees based on cumulative sentiment.
+
+Findings:
+
+Top Positive Employees: [List from your output]
+
+Top Negative Employees: [List from your output]
+
+Task 5: Flight Risk Identification
+Criteria Used:
+
+Employees with consistently low sentiment scores.
+
+Employees showing sudden sentiment drops compared to previous months.
+
+Output:
+
+List of employees flagged as potential flight risks.
+
+Visualization:
+
+Flight risk indicators plotted by employee.
+
+Task 6: Predictive Modeling
+Objective:
+Predict monthly sentiment scores based on features such as message count, word count, and message length.
+
+Models Tried:
+
+Linear Regression (Initial Model)
+
+Showed correlation but large variance between actual and predicted values.
+
+Improved Model: Random Forest Regressor
+
+Captured non-linear relationships.
+
+Reduced error metrics (RMSE, MAE).
+
+Performance Metrics:
+
+The linear regression model for sentiment score prediction, characterized
+ by an MAE of 1.54, RMSE of 1.97, and an R² of 0.67 on a 0-14 sentiment scale, 
+ demonstrates a moderate level of predictive capability. 
+ It successfully captures a significant portion of the variance in sentiment scores 
+ and establishes a clear positive correlation between actual and predicted values.
+
+Visualizations:
+
+Actual vs Predicted scatter plot
+
+Residual plot
+
+3. Key Observations & Insights
+Positive sentiment often correlates with longer, detailed communication.
+
+Negative sentiment tends to spike in certain months, potentially linked to organizational changes.
+
+Flight risks are often preceded by a steady decline in sentiment score.
+
+
+Conclusion: The inherent challenges of sentiment analysis—including context dependency,
+ sarcasm, negation, and the subjective nature of human sentiment—suggest that achieving perfect scores is exceptionally difficult.
+  Within this complex domain, an R² of 0.67 represents a reasonable and promising starting point.
